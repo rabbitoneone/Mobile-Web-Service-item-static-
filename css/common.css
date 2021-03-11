@@ -1,0 +1,163 @@
+/* header区域开始*/
+header {
+    height:52px;
+    background-color: #333;
+}
+header .subnav {
+    float: right;  
+    height:52px;       
+}
+header .subnav li {
+    float: left;
+    height:52px;
+    line-height:52px;
+}
+header .subnav li:nth-child(2n){
+    border:1px solid #666;
+    height:14px;
+    margin: 19px 11px 0;
+}
+header li a {
+    color:#dcdcdc;
+    font-size: 14px;
+}
+header .phone a::before {
+    content:"";
+    position:relative;
+    top:-1px;
+    display:inline-block;
+    width:12px;
+    height:16px;
+    background: url(../images/sprites.png) -160px -70px  no-repeat;
+    vertical-align:middle;
+    margin-right:2px;
+}
+/* logo以及导航区域开始 */
+.head {
+    height:130px;
+    padding: 22px 0 41px;
+}
+.head .logo {
+    float: left;
+    width:193px;
+    text-indent:-999px;
+}
+.head .logo a {
+    display:block;
+    width:100%;
+    height:65px;
+    background: url(../images/logo.png) no-repeat;
+}
+/* .head导航区域 */
+.head  .nav{
+    float: left;
+    margin-left:57px;
+}
+.head  .nav li {
+    float: left;
+    height:35px;
+    line-height:35px;
+    margin:24px 49px 0 0;
+}
+.head  .nav  a {
+    color:#333333;
+    font-size: 16px;
+}
+.head  .nav li:hover{
+    
+    border-bottom:2px solid #5eb69c;
+}
+.head   li:hover a{
+    color:#5eb69c;
+}
+/* .head shopcar区域 */
+.head .shopcar {
+    position:relative;
+    float: right;
+    margin-top:24px;
+    margin-right:15px;
+    width:30px;
+    height:35px;
+    background: url(../images/sprites.png) -118px -63px no-repeat;
+}
+.head .shopcar span{
+    position:absolute;
+    left: 10px;
+    top: -6px;
+    padding:2px 8px;
+    background-color: #e26237;
+    border-radius:20px;
+}
+
+/*.head search区域 */
+.head .search {
+    position:relative;
+    float: right;
+    width:172px;
+    height:35px;
+    line-height:35px;
+    margin-top:24px;
+    margin-right:40px;
+}
+.head .search input{
+    width:172px;
+    height:35px;
+    border:0;
+    outline:none;
+    text-indent:30px;
+}
+.head .search::before{
+    content:"";
+    position:absolute;
+    left:3px;
+    top:8px;
+    width:20px;
+    height:20px;
+    background: url(../images/sprites.png) -78px -70px no-repeat;
+}
+/* 尾部区域 */
+.footer {
+    height:350px;
+    background-color: #333;
+}
+.footer .aboutus {
+    width:1240px;
+    height:180px;
+    border-bottom:1px solid #434343;
+}
+.footer .aboutus li {
+    float: left;
+    width:33.33%;
+    height:180px;
+    text-align: center;
+    line-height: 180px;
+    font-size: 28px;
+    color: #fff;
+}
+.aboutus  li em {
+    display: inline-block;
+    width:58px;
+    height:58px;
+    background:url(../images/sprites.png) 0 0px no-repeat;
+    vertical-align: middle;
+}
+.friendlinks {
+    text-align: center;
+    padding-top:42px;
+    color:#999999;
+    font-size: 14px;
+}
+.friendlinks .about {
+    margin-bottom:20px;
+}
+
+.friendlinks a {
+    color:#999999;
+}
+.friendlinks .about em {
+    display: inline-block;
+    height:12px;
+    margin:0 5px 0;
+    vertical-align: middle;    
+    border:1px solid #999;
+}

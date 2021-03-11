@@ -1,0 +1,386 @@
+.main{
+    background-color: #f6f6f6;
+}
+.main .w {
+    display:flex;
+    padding:36px 0 79px;
+}
+/* 左边user信息的区域 */
+.user-info {
+    width:228px;
+    background-color: #fff;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+/* 会员区域 */
+
+.member{
+    padding-top:40px;
+    width:228px;
+    height:230px;
+    border-bottom:1px solid #f4f4f4;
+}
+
+.member >.pic {
+    width:85px;
+    height:85px;
+    margin-bottom:14px;
+    margin:0 auto 20px;
+}
+.member > p:nth-child(2){
+    font-size: 18px;
+    color:#333;
+    margin-bottom:19px;
+}
+.member > p:nth-child(3){
+    font-size: 14px;
+    color:#f9f9f9;
+    width:93px;
+    height:26px;
+    border-radius:10px;
+    line-height:26px;
+    margin:0 auto;
+    background-color: #e05f30;
+}
+.account{
+    width:228px;
+    padding:30px 0 30px;
+    border-bottom:1px solid #f4f4f4;
+}
+
+.account >dt {
+    margin-bottom:32px;
+    font-size:18px;
+    color:#333333;
+}
+.account >dd {
+    font-size:14px;
+    color:#666;
+    margin-bottom:28px;
+}
+.account >dd:last-child{
+    margin-bottom:0;
+}
+.help-center {
+    border-bottom:0;
+}
+    
+/* 右边商品订单信息区域 */
+.goods-desc {
+    margin-left:20px;
+    flex:1;
+}
+/* 详情页右边头部标题区域 */
+.desc-header{
+    position:relative;
+    height:132px;
+    padding: 0 20px;  
+    display:flex;
+    background-color: #fff;
+    margin-bottom:20px;
+}
+.desc-setting,.desc-welfare {
+    display:flex;
+    height:132px;
+    justify-content:center;
+    align-items:center;
+}
+.desc-setting  > li,.desc-welfare  > li {
+    flex:1;
+}
+.desc-setting  > li > a ,.desc-welfare  > li >a {
+    text-align: center;
+}
+.desc-setting>li>a>h3,.desc-welfare>li>a>h3{
+    font-weight: 400;
+    font-size:16px;
+    color:#333;
+    margin-top:20px;
+}
+
+.desc-welfare>li>a>p{
+    font-size:28px;
+    color:#e05e30;
+}
+.desc-setting>li>a>p{
+    font-size:28px;
+    color:#75d3b8;
+}
+.goods-desc .desc-header::after {
+    content:"";
+    height:80%;
+    border-left:1px solid #f4f4f4;
+    position:absolute;
+    top:10%;
+    left:50%
+}
+.desc-header > ul {
+    flex:1;
+}
+/* 我的订单头部区域 */
+.order-info {
+    padding:0 20px 20px;
+    background-color: #fff;
+    margin-bottom:15px;
+}
+.info-header {
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.info-header > p {
+    font-size:22px;
+    color:#333;
+}
+.info-header > a {
+    font-size:16px;
+    color:#999;
+}
+.info-header > a::after{
+    content:'>';
+    /* font-size:16px; */
+    font-family:'宋体';
+    margin-left:10px;
+}
+/* 我的订单内容区域 */
+.common-center {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+.order-desc {
+    display:flex;
+    height:137px;
+    border:1px solid #e8e8e8;
+    font-size:14px;
+    margin-bottom:20px;
+}
+ /* 我的订单-订单详情区域 */
+.order-desc .goods-info{
+    flex:1;
+    display:flex;
+    align-items:center;
+} 
+
+.order-desc .goods-info .pic {
+    width:107px;
+    height:107px;
+    margin-left:10px;
+}
+.goods-info .goods-content{
+    flex:1;
+    width: 0px;
+}
+ .goods-info .goods-content p:nth-child(1){
+     color:#333;
+     font-size: 16px;
+     margin-bottom:10px;
+     white-space:nowrap;
+     overflow:hidden;
+     text-overflow:ellipsis;
+ }
+ .goods-info .goods-content p:nth-child(2){
+    color:#999;
+}
+/* 我的订单付款状态区域 */
+.order-desc .pay-state{
+    width:190px;
+    color:#e05e30;
+}
+/* 我的订单价格详情区域 */
+.order-desc .pay-info{
+    width:198px;
+    color:#333;
+    border-left:1px solid #e8e8e8;
+    border-right:1px solid #e8e8e8;
+}
+.order-desc .pay-info p:nth-child(1){
+    color:#9a2e1f;
+    margin-bottom:5px;
+}
+.order-desc .pay-info p:nth-child(2){
+    margin-bottom:5px;
+}
+
+/* 我的订单**立即付款区域 */
+.order-desc .go-pay{
+    width:180px;
+}
+.order-desc .go-pay>a:nth-child(1){
+    width:100px;
+    height:30px;
+    background-color: #5eb69c;
+    color:#fff;
+    text-align: center;
+    line-height:30px;
+    margin-bottom:15px;
+}
+.order-desc .go-pay>a:nth-child(2){
+    margin-bottom:10px;
+}
+.order-desc .go-pay>a:last-child(-n+2){
+    color:#333;
+}
+/* 收藏的商品 */
+.collect{
+    background-color: #fff;
+}
+.collect .order-info .info-header{
+    border-bottom:1px solid #f4f4f4;
+    margin-bottom:30px;
+}
+.collect  .collect-desc {
+    display:flex;
+    height:260px;
+}
+.collect  .collect-desc>li {
+    flex:1;
+    padding:9px 5px 0;
+    margin-right:10px;
+    background-color: #fff;
+}
+.collect  .collect-desc>li:last-child{
+    margin-right:0;
+}
+
+.desc-content>a>.pic {
+    width:160px;
+    height:160px;
+    margin:0 auto 20px;
+}
+.desc-content>a>p:nth-child(2){
+    font-size: 16px;
+    height:35px;
+    color:#333333;
+    margin-bottom:10px;
+}
+.desc-content p:nth-child(3){
+    color:#9a2e1f;
+    font-size:22px;
+}
+.desc-content p:nth-child(3)>span {
+    font-size:17px;
+}
+/* help客户服务趋区域*/
+.help{
+    background-color: #f6f6f6;
+}
+.help,.help .w ,.help-info {
+    height:290px; 
+}
+.help-info {
+    display:flex;
+    border-top:1px solid #e4e4e4;    
+    padding:56px 0 40px;
+    justify-content:center;
+    align-items:center;
+}
+.help-info > li {
+    flex:1;
+    text-align: center;
+}
+.help-info > li >h4 {
+    font-size:18px;
+    color:#999;
+    font-weight:400;
+    margin-bottom:36px;
+}
+
+.help-online{
+    display:flex;
+    justify-content:center;
+    font-size: 14px;
+}
+.help-online>a:nth-child(1){
+    margin-right:10px;
+}
+.help-online >a {
+    color:#999;
+    width:93px;
+    height:93px;
+    background-color: #fff;
+}
+.help-online >a p{
+    margin:20px 0 12px;
+}
+.help-online >a > p {
+    font-size:28px;
+}
+.icon-weixin{
+    color:#5eb69c
+}
+.icon-tubiao214  {
+    color:#666666
+}
+/* 下载app区域 */
+.help-info{
+    display:flex;
+}
+.help-info li {
+    flex:1;
+}
+
+.help-info .help-online .scan {
+    background-color: #f6f6f6;
+   }
+.help-online .scan >p {
+    font-size:14px;
+    color:#999;
+    margin: 10px 0 5px 0;
+}
+.help-online .scan >h5 {
+    font-weight:400;
+    margin-bottom:15px;
+}
+.help-online .scan >h4{
+    font-weight:400; 
+    width:105px;
+    height:35px;
+    line-height:35px;
+    background-color:#5eb69c;
+    color:#fff;
+}
+.help-info .hot-line {
+    width:162px;
+    height:123px;
+    display:flex;
+    flex-direction:column;
+}
+.help-info .hot-line p{
+    font-size:15px;
+    width:162px;
+}
+.help-info .hot-line p:first-child{
+    font-size:22px;
+    font-weight:700;
+    color:#666666;
+}
+.help-info  .hot-line {
+    background-color:  #f6f6f6;
+}
+.footprint {
+    margin-bottom:0;
+}
+@media (max-width:1240px){
+    .w{
+        width:1000px;
+    }
+    .order-desc .pay-state{
+        width:160px;
+        color:#e05e30;
+    }
+    .order-desc .pay-info{
+        width:168px;
+        color:#333;
+        border-left:1px solid #e8e8e8;
+        border-right:1px solid #e8e8e8;
+    }
+    .order-desc .go-pay{
+        width:150px;
+    }
+}
